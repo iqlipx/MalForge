@@ -14,7 +14,8 @@ MalForge is a tool designed to manipulate and corrupt ELF binaries, making rever
    - [2. Section Header Overwriting](#section-header-overwriting)  
    - [3. Symbol Table Obfuscation](#symbol-table-obfuscation)  
    - [4. Decoy Section Addition](#decoy-section-addition)  
-5. [Disclaimer](#disclaimer)  
+5. [Disclaimer](#disclaimer)
+6. [Screenshots](#screenshots)
 
 ---
 
@@ -57,7 +58,7 @@ To run MalForge, provide the path to an ELF binary as an argument:
 **Example**
 
 ```bash
-./malforge test
+./malforge test101
 ```
 This command will apply all the corruption techniques to the provided ELF binary.
 
@@ -78,6 +79,19 @@ The `.symtab` section, which contains the binary’s symbol information, is XOR-
 
 4. **Decoy Section Addition**
 A decoy section filled with random junk data is added to the binary at an arbitrary offset. This can mislead reverse engineers and make binary analysis more confusing.
+
+
+## Screenshots
+
+![test](/images/test.png)
+
+![elf](/images/elf.png)
+
+![corrupt](/images/corrupt.png)
+
+![result](/images/result.png)
+
+[HexDump](hexdump)
 
 ## Disclaimer
 MalForge is intended for educational and research purposes only. Unauthorized modification of binaries is illegal in many jurisdictions. Use this tool responsibly and ensure that you have permission before modifying any binary files.
